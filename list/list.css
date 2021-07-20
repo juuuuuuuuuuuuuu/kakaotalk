@@ -52,7 +52,6 @@ header button i {
 .item {
   padding: 10px;
   display: flex;
-  justify-content: space-between;
 }
 
 .item img {
