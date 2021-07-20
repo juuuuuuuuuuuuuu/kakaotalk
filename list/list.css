@@ -1,0 +1,112 @@
+:root {
+  /* color */
+  --purple-color: #5B36AC;
+  --charcoal-color: #464052;
+  --black-color: #000000;
+  --white-color: #FFFFFF;
+  --coolGrey-color: #A4A6B0;
+  --paleGrey-color: #F9F9FB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  src: url('../font/AppleSDGothicNeoM.ttf');
+  letter-spacing: -0.1px;
+  font-size: 14px;
+}
+
+body {
+  font-family: 'AppleSDGothicNeo';
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--purple-color);
+  color: var(--white-color);
+}
+
+header button i {
+  color: var(--white-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.item {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.item {
+  display: flex;
+}
+
+.item .text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  width: 100%;
+}
+.item .text .titleAndDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleAndDate  .title {
+  font-weight: 800;
+}
+
+.titleAndDate .date {
+  color: var(--coolGrey-color);
+  font-size: 10px;
+  align-self: flex-end;
+}
+
+.messageAndCount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.messageAndCount .message {
+  color: var(--coolGrey-color);
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+}
+
+.messageAndCount .count {
+  font-size: 10px;
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  text-align: center;
+  padding: 4px 8px;
+}
